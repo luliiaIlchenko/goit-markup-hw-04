@@ -17,6 +17,7 @@
   --footer-bg-color: #2f303a;
   --copyright-color: rgba(255, 255, 255, 0.4);
   --clients-logo-color: #afb1b8;
+  --footer-socials-bg-color: rgba(255, 255, 255, 0.1);
 }
 
 html {
@@ -106,8 +107,6 @@ img {
 .site-nav .link:focus,
 .contacts .link:hover,
 .contacts .link:focus,
-.socials.link:hover,
-.socials.link:focus,
 .clients.link:hover,
 .clients.link:focus {
   color: var(--accent-color);
@@ -421,7 +420,7 @@ img {
 
 .address {
   margin-right: 69px;
-  width: calc((100% - 330px) / 12 * 3 + 60px);
+  width: calc(100% / 4);
 }
 
 .address-info {
@@ -440,6 +439,20 @@ img {
   margin-right: 10px;
 }
 
+.socials.link {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 44px;
+  height: 44px;
+  background-color: var(--footer-socials-bg-color);
+  border-radius: 50%;
+}
+
+.socials.link:hover,
+.socials.link:focus {
+  background-color: var(--accent-color);
+}
+
 .label {
   display: block;
   margin-bottom: 21px;
@@ -454,7 +467,7 @@ img {
 
 .join-us {
   margin-right: 94px;
-  width: calc((100% - 30px) / 12 * 4);
+  width: calc(100% / 4);
 }
 
 .copyright {

@@ -126,12 +126,34 @@ img {
   /*display: block;
   padding-top: 32px;
   padding-bottom: 32px;*/
-
+  display: flex;
+  align-items: center;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+}
+
+.envelope-icon {
+  width: 16px;
+  height: 11.2px;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+
+.smartphone-icon {
+  width: 10px;
+  height: 14.94px;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+
+.contacts .link:hover .envelope-icon,
+.contacts .link:focus .envelope-icon,
+.contacts .link:hover .smartphone-icon,
+.contacts .link:focus .smartphone-icon {
+  fill: var(--accent-color);
 }
 
 /*Logo*/
@@ -239,6 +261,21 @@ img {
 
 .advantages .item:not(:last-child) {
   margin-right: 30px;
+}
+
+.advantages-icon {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  background-color: var(--section-bg-color);
+  border-radius: 4px;
+}
+
+.advantages-icon .icon {
+  width: 70px;
+  height: 70px;
 }
 
 /*Our services*/

@@ -16,6 +16,7 @@
   --button-text-color: #ffffff;
   --footer-bg-color: #2f303a;
   --copyright-color: rgba(255, 255, 255, 0.4);
+  --clients-logo-color: #afb1b8;
 }
 
 html {
@@ -273,11 +274,6 @@ img {
   border-radius: 4px;
 }
 
-.advantages-icon .icon {
-  width: 70px;
-  height: 70px;
-}
-
 /*Our services*/
 .services {
   display: flex;
@@ -370,6 +366,22 @@ img {
 /*Our clients*/
 .clients {
   display: flex;
+}
+
+.clients.link {
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: var(--clients-logo-color);
+}
+
+.clients.link:hover,
+.clients.link:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .clients .item {

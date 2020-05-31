@@ -449,14 +449,16 @@ img {
   margin-right: 10px;
 }
 
+.footer-socials .link {
+  background-color: var(--footer-socials-bg-color);
+  fill: var(--primary-white-color);
+}
+
 .socials.link {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 12px;
   width: 44px;
   height: 44px;
-  background-color: var(--footer-socials-bg-color);
   border-radius: 50%;
-  fill: var(--primary-white-color);
 }
 
 .socials.link:hover,
